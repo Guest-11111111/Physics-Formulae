@@ -2,7 +2,7 @@
 #include <sdk/calc/calc.hpp>
 #include <sdk/os/lcd.hpp>
 #include <sdk/os/debug.hpp>
-
+#include <cmath.h>
 /*
  * Fill this section in with some information about your app.
  * All fields are optional - so if you don't need one, take it out.
@@ -16,20 +16,9 @@ extern "C"
 void main() {
 	calcInit(); //backup screen and init some variables
 
-	// Put your app's code here!
-
-	//Example for fillScreen(color);
-	fillScreen(color(0,64,0));
-
-	//Example for Debug_Printf(x,y,invert_color,0,format_string) //(small text)
-	Debug_Printf(10,1,false,0,"HelloWorld%d",42);
-
-	//Example for Debug_PrintString(string, invert_color) //(big text)
-	Debug_SetCursorPosition(13,1);
-	Debug_PrintString("HelloWorld",0);
-
-	//use this command to actually update the screen 
-	LCD_Refresh();
+	cout << "Hello, World"
+	int cin << x 
+	
 
 	//Example for setPixel(x,y,color)
 	for (int x=0; x<256;x++){
